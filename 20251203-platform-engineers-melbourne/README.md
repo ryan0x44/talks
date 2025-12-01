@@ -53,6 +53,20 @@ Over the last two months have used Claude Code, Codex, and AmpCode, using Claude
 
 Currently the main tools are VSCodium and Ghostty+tmux with Amp Code and Opus 4.5.
 
+## Takeaways
+
+If you want:
+
+* An OIDC server for Kubernetes that's fast to set-up and low cost/maintenance: check out [Easy OIDC](https://easy-oidc.dev)!
+
+* etcd but without the operational complexity: check out [Netsy](https://netsy.dev) (multi-node coming soon!)
+
+* Fast auto-scaling VMs with custom CA certificates (with or without Kubernetes): check out [Nstance](https://nstance.dev)
+
+* A developer platform deployed on a Kubernetes cluster in two commands: check out [Prebake](https://prebake.dev)
+
+* An Open Source Kubernetes PaaS, follow [Nadrama on LinkedIn](https://www.linkedin.com/company/nadrama/) for updates, or join the [Nadrama Discord community](https://go.nadrama.com/discord) - Nadrama is launching soon.
+
 ## Show Your Support
 
 😎 Take some swag
