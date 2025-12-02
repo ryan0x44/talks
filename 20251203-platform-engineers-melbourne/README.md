@@ -95,7 +95,11 @@ Status: [Easy OIDC Launched Nov 11](https://nadrama.com/blog/introducing-easy-oi
 
 ### etcd alternative: Netsy
 
-Status: [Single-Node Launched Aug 7](https://nadrama.com/blog/introducing-netsy), TODO - Open Source
+Status: [Single-Node Launched Aug 7](https://nadrama.com/blog/introducing-netsy), TODO - Open Source Multi-Node
+
+* Overview: <https://github.com/nadrama-com/netsy?tab=readme-ov-file#netsy>
+
+* Dev Demo: <https://github.com/nadrama-com/netsy?tab=readme-ov-file#development>
 
 ---
 
