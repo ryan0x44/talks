@@ -10,7 +10,7 @@ You can follow and connect with me on [X](https://x.com/ryan0x44) and [LinkedIn]
 
 On July 31st, launched a mostly-Open Source solution - e.g. [Netsy](https://netsy.dev) was Open Source already, but you couldn't run the solution entirely yourself.
 
-* TODO: Demo of Nadrama.com PaaS offering after July 31st launch
+* [Demo of Nadrama.com PaaS offering after July 31st launch](https://drive.google.com/file/d/1g_v4A-ld0EFz356grOsesuxqrDQ5Re2S/view?usp=sharing)
 
 Based on feedback from test users and potential customers, [Nadrama went all-in on Open Source](https://nadrama.com/blog/open-source-paas).
 
