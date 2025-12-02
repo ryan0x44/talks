@@ -16,7 +16,7 @@ Based on feedback from test users and potential customers, [Nadrama went all-in 
 
 ## 2. New Platform Design
 
-TODO: architecture diagram
+![Architecture diagram](./architecture.png)
 
 ## 3. Open Source PaaS
 
