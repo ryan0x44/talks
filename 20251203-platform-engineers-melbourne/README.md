@@ -6,17 +6,25 @@ The goal of the talk is to take you through the journey of building [Nadrama.com
 
 You can follow and connect with me on [X](https://x.com/ryan0x44) and [LinkedIn](https://www.linkedin.com/in/ryandjurovich/).
 
+---
+
 ## 1. July to September Beta
 
-On July 31st, launched a mostly-Open Source solution - e.g. [Netsy](https://netsy.dev) was Open Source already, but you couldn't run the solution entirely yourself.
+On July 31st, launched a mostly-Open Source solution
 
-* [Demo of Nadrama.com PaaS offering after July 31st launch](https://drive.google.com/file/d/1g_v4A-ld0EFz356grOsesuxqrDQ5Re2S/view?usp=sharing)
+e.g. [Netsy](https://netsy.dev) was Open Source already, but you couldn't run the solution entirely yourself.
+
+[Demo of Nadrama.com PaaS offering after July 31st launch](https://drive.google.com/file/d/1g_v4A-ld0EFz356grOsesuxqrDQ5Re2S/view?usp=sharing)
 
 Based on feedback from test users and potential customers, [Nadrama went all-in on Open Source](https://nadrama.com/blog/open-source-paas).
+
+---
 
 ## 2. New Platform Design
 
 ![Architecture diagram](./architecture.png)
+
+---
 
 ## 3. Open Source PaaS
 
@@ -42,9 +50,13 @@ node-2   Ready    worker         45s   v1.34.0
 Success! View your app at https://hello.example.com …
 ```
 
+---
+
 ## 4. The Building Blocks
 
 Let's step through each of the components which make up the "PaaS" solution
+
+---
 
 ### PaaS/Apps: Prebake
 
@@ -64,6 +76,8 @@ k9s
 make kind-delete
 ```
 
+---
+
 ### Auth & RBAC: Easy OIDC
 
 Status: [Easy OIDC Launched Nov 11](https://nadrama.com/blog/introducing-easy-oidc)
@@ -73,13 +87,19 @@ Status: [Easy OIDC Launched Nov 11](https://nadrama.com/blog/introducing-easy-oi
 - TF Demo: <https://github.com/easy-oidc/terraform-aws-easy-oidc?tab=readme-ov-file#prerequisites>
   - Note: Requires a working Route53 zone
 
+---
+
 ### etcd alternative: Netsy
 
 Status: [Single-Node Launched Aug 7](https://nadrama.com/blog/introducing-netsy), TODO - Open Source
 
+---
+
 ### Auto-Scaling: Nstance
 
 Status: TODO - Open Source
+
+---
 
 ### VM/OS "Images": Nadrama OS
 
@@ -89,6 +109,8 @@ Status: TODO - Open Source
 - Exclusively targetting Ubuntu server LTS (why? Cloud provider support, GPU support)
 - Skips `apt-get upgrade` on critical path: cache refresh is [often taking 10-15 seconds](https://nadrama.com/blog/infra-in-60-seconds#every-second-counts-and-details-matter) alone.
 
+---
+
 ### OpenTofu: Nadrama CLI
 
 Status: TODO - Open Source
@@ -96,17 +118,23 @@ Status: TODO - Open Source
 - When creating a cluster, you need a name/slug and VPC/Subnet CIDR blocks
 - CLI code-gens the OpenTofu variables, etc.
 
+---
+
 ## What's Next
 
 * Finish & refine the Open Source solution, then get more folks using it, and iterate
 
 * Build a new SaaS offering which deploys the Open Source platform, managed for you
 
+---
+
 ## Other Things
 
 Over the last two months have used Claude Code, Codex, and AmpCode, using Claude Sonnet/Opus 4(.5), GPT5, and Gemini 3.
 
 Currently the main tools are VSCodium and Ghostty+tmux with Amp Code and Opus 4.5.
+
+---
 
 ## Takeaways
 
@@ -122,6 +150,8 @@ If you want:
 
 * An Open Source Kubernetes PaaS, follow [Nadrama on LinkedIn](https://www.linkedin.com/company/nadrama/) for updates, or join the [Nadrama Discord community](https://go.nadrama.com/discord) - Nadrama is launching soon.
 
+---
+
 ## Show Your Support
 
 😎 Take some swag
@@ -136,3 +166,7 @@ If you want:
 🗣️ Join the community and ask questions / give feedback / contribute:
 
 * [Nadrama Discord community](https://go.nadrama.com/discord)
+
+---
+
+Thank you!
