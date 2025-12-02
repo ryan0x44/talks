@@ -20,10 +20,27 @@ Based on feedback from test users and potential customers, [Nadrama went all-in 
 
 ## 3. Open Source PaaS
 
-* OpenTofu/Terraform apply
-* Look at AWS resources in console
-* Login to the cluster
-* Let's look at the .tf resources
+The current planned DX with the new Nadrama Open Source PaaS:
+
+```
+➜ nadrama cluster create production -tf
+Generated Terraform/OpenTofu configuration.
+
+➜ tofu apply
+Apply complete! Resources: X added, Y changed, Z destroyed.
+
+➜ nadrama cluster login production —api production.example.com —oidc auth.example.com
+Awaiting browser login at https://auth.example.com …
+Login success! kubectl has now been configured with `production` context.
+
+➜ kubectl get nodes —context production
+NAME     STATUS   ROLES          AGE   VERSION
+node-1   Ready    control-plane  1m    v1.34.0
+node-2   Ready    worker         45s   v1.34.0
+
+➜ nadrama deploy webapp —name hello —image nadrama/hello-world:latest
+Success! View your app at https://hello.example.com …
+```
 
 ## 4. The Building Blocks
 
