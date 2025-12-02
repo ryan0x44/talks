@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Talk: Building Nadrama - an Open Source PaaS
 
 This is my talk at the [Melbourne Platform Engineers meetup](https://www.meetup.com/melbourne-pe/) on 3 December 2025 ([event page here](https://www.meetup.com/en-au/melbourne-pe/events/311866081/)).
