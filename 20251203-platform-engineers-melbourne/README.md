@@ -29,21 +29,59 @@ Based on feedback from test users and potential customers, [Nadrama went all-in 
 
 Let's step through each of the components which make up the "PaaS" solution
 
+### PaaS/Apps: Prebake
+
+Status: [Prebake Launched Nov 12](https://nadrama.com/blog/introducing-prebake)
+
+- Overview: <https://prebake.dev>
+- Details & Demo: <https://github.com/prebake/prebake?tab=readme-ov-file#prebake---a-developer-platform-for-kubernetes>
+
+```
+make kind-create kind-context
+kubectl get nodes
+kubectl get pods -A
+make setup DOMAIN=example.com
+make install
+kubectl get pods -A
+k9s
+make kind-delete
+```
+
 ### Auth & RBAC: Easy OIDC
 
-### Auto-Scaling: Nstance
+Status: [Easy OIDC Launched Nov 11](https://nadrama.com/blog/introducing-easy-oidc)
+
+- Overview: <https://easy-oidc.dev>
+- Dev Demo: <https://github.com/easy-oidc/easy-oidc/blob/main/DEV.md>
+- TF Demo: <https://github.com/easy-oidc/terraform-aws-easy-oidc?tab=readme-ov-file#prerequisites>
+  - Note: Requires a working Route53 zone
 
 ### etcd alternative: Netsy
 
+Status: [Single-Node Launched Aug 7](https://nadrama.com/blog/introducing-netsy), TODO - Open Source
+
+### Auto-Scaling: Nstance
+
+Status: TODO - Open Source
+
 ### VM/OS "Images": Nadrama OS
+
+Status: TODO - Open Source
+
+- A collection of userdata scripts which preconfigures operating system with all necessary binaries and configuration
+- Exclusively targetting Ubuntu server LTS (why? Cloud provider support, GPU support)
+- Skips `apt-get upgrade` on critical path: cache refresh is [often taking 10-15 seconds](https://nadrama.com/blog/infra-in-60-seconds#every-second-counts-and-details-matter) alone.
 
 ### OpenTofu: Nadrama CLI
 
-### PaaS/Apps: Prebake
+Status: TODO - Open Source
+
+- When creating a cluster, you need a name/slug and VPC/Subnet CIDR blocks
+- CLI code-gens the OpenTofu variables, etc.
 
 ## What's Next
 
-* Refine the Open Source solution, then get more folks using, and iterate
+* Finish & refine the Open Source solution, then get more folks using it, and iterate
 
 * Build a new SaaS offering which deploys the Open Source platform, managed for you
 
