@@ -64,7 +64,7 @@ Let's step through each of the components which make up the "PaaS" solution
 
 ### PaaS/Apps: Prebake
 
-Status: [Prebake Launched Nov 12](https://nadrama.com/blog/introducing-prebake)
+Project Status: [Prebake Launched Nov 12](https://nadrama.com/blog/introducing-prebake)
 
 - Overview: <https://prebake.dev>
 - Details & Demo: <https://github.com/prebake/prebake?tab=readme-ov-file#prebake---a-developer-platform-for-kubernetes>
@@ -84,7 +84,7 @@ make kind-delete
 
 ### Auth & RBAC: Easy OIDC
 
-Status: [Easy OIDC Launched Nov 11](https://nadrama.com/blog/introducing-easy-oidc)
+Project Status: [Easy OIDC Launched Nov 11](https://nadrama.com/blog/introducing-easy-oidc)
 
 - Overview: <https://easy-oidc.dev>
 - Dev Demo: <https://github.com/easy-oidc/easy-oidc/blob/main/DEV.md>
@@ -95,7 +95,7 @@ Status: [Easy OIDC Launched Nov 11](https://nadrama.com/blog/introducing-easy-oi
 
 ### etcd alternative: Netsy
 
-Status: [Single-Node Launched Aug 7](https://nadrama.com/blog/introducing-netsy), TODO - Open Source Multi-Node
+Project Status: [Single-Node Launched Aug 7](https://nadrama.com/blog/introducing-netsy), TODO - Open Source Multi-Node
 
 * Overview: <https://github.com/nadrama-com/netsy?tab=readme-ov-file#netsy>
 
@@ -105,13 +105,17 @@ Status: [Single-Node Launched Aug 7](https://nadrama.com/blog/introducing-netsy)
 
 ### Auto-Scaling: Nstance
 
-Status: TODO - Open Source
+Project Status: Launching tomorrow (4 Dec 2025)
+
+* Overview: <https://github.com/nstance-dev/nstance>
+
+* Dev Demo: <https://github.com/nstance-dev/nstance/blob/main/docs/DEV.md>
 
 ---
 
 ### VM/OS "Images": Nadrama OS
 
-Status: TODO - Open Source
+Project Status: TODO - Open Source
 
 - A collection of userdata scripts which preconfigures operating system with all necessary binaries and configuration
 - Exclusively targetting Ubuntu server LTS (why? Cloud provider support, GPU support)
@@ -121,7 +125,7 @@ Status: TODO - Open Source
 
 ### OpenTofu: Nadrama CLI
 
-Status: TODO - Open Source
+Project Status: TODO - Open Source
 
 - When creating a cluster, you need a name/slug and VPC/Subnet CIDR blocks
 - CLI code-gens the OpenTofu variables, etc.
